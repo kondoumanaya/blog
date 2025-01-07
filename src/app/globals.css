@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 28, 28, 28;
+  --background-start-rgb: 245, 245, 245;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 227, 227, 227;
+    --background-start-rgb: 28, 28, 28;
+    --background-end-rgb: 38, 38, 38;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.content h1 {
+  @apply text-4xl font-bold mb-4 mt-8;
+}
+
+.content h2 {
+  @apply text-3xl font-semibold mb-4 mt-6;
+}
+
+.content h3 {
+  @apply text-2xl font-semibold mb-4 mt-5;
+}
+
+.content h4 {
+  @apply text-xl font-semibold mb-3 mt-4;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(var(--background-end-rgb));
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: rgb(var(--foreground-rgb));
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
+  color: rgb(var(--foreground-rgb));
+}
