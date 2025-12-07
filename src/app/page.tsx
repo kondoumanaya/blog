@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import GothamScene, { CategoryBuilding } from './components/GothamScene'
+import GothamScene, { type CategoryBuilding } from './components/GothamScene'
 
 const categories: CategoryBuilding[] = [
   {
     name: 'Affiliate',
     slug: 'affiliate',
-    position: [-8, 0, -2] as const,
+    position: [-8, 0, -2],
     height: 9,
     color: '#11202d',
     accent: '#8ce1ff',
@@ -14,7 +14,7 @@ const categories: CategoryBuilding[] = [
   {
     name: 'Crypto Bot',
     slug: 'crypto-bot',
-    position: [0, 0, 6] as const,
+    position: [0, 0, 6],
     height: 11.5,
     color: '#0d1c18',
     accent: '#41f2c0',
@@ -23,7 +23,7 @@ const categories: CategoryBuilding[] = [
   {
     name: 'TechBlog',
     slug: 'techblog',
-    position: [8, 0, -4] as const,
+    position: [8, 0, -4],
     height: 10,
     color: '#12182e',
     accent: '#8f7bff',
@@ -32,7 +32,7 @@ const categories: CategoryBuilding[] = [
   {
     name: 'Profile',
     slug: 'profile',
-    position: [2, 0, -10] as const,
+    position: [2, 0, -10],
     height: 8,
     color: '#1b1b27',
     accent: '#f2dd7e',
