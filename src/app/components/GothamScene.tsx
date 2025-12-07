@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 
 const REMOTE_THREE = 'https://esm.sh/three@0.161.0'
 
-type CategoryBuilding = {
+export type CategoryBuilding = {
   name: string
   slug: string
   position: [number, number, number]
